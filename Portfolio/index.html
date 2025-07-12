@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Ahmed Saleh Zaitoon, Civil Engineer specializing in steel detailing, 3D modeling, and structural engineering with international experience.">
+    <meta name="keywords" content="steel detailing, 3D modeling, civil engineering, Tekla Structures, Revit, BIM, AISC, NYSCA, Eurocode, portfolio">
+    <meta name="author" content="Ahmed Saleh Zaitoon">
+    <title>Ahmed Saleh Zaitoon - Civil Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231e293b'%3E%3Cpath d='M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.5l7 3.5v7l-7 3.5-7-3.5v-7l7-3.5z'/%3E%3C/svg%3E">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .nav-link:hover {
+            color: #06b6d4;
+            transition: color 0.3s ease;
+        }
+        .progress-bar {
+            background-color: #e2e8f0;
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress-bar-fill {
+            background-color: #ee7220;
+            height: 100%;
+            transition: width 0.5s ease-in-out;
+        }
+        .placeholder-img {
+            background-color: #e9ecef;
+            border: 2px dashed #adb5bd;
+            min-height: 200px;
+        }
+        .loading-spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #1e293b;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background-color: #1e293b;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background-color: #06b6d4;
+            border-radius: 50%;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800">
+    <div id="loading-spinner" class="loading-spinner"></div>
+
+    <!-- Navigation -->
+    <nav class="bg-slate-800 text-white fixed top-0 w-full z-10 shadow-lg" download style="background-color: #1772aff6;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-xl font-bold">Ahmed Saleh Zaitoon</div>
+                <div class="flex space-x-4">
+                    <a href="#home" class="nav-link px-3 py-2 hover:text-cyan-400">Home</a>
+                    <a href="#about" class="nav-link px-3 py-2 hover:text-cyan-400">About</a>
+                    <a href="#education" class="nav-link px-3 py-2 hover:text-cyan-400">Education</a>
+                    <a href="#experience" class="nav-link px-3 py-2 hover:text-cyan-400">Experience</a>
+                    <a href="#skills" class="nav-link px-3 py-2 hover:text-cyan-400">Skills</a>
+                    <a href="#portfolio" class="nav-link px-3 py-2 hover:text-cyan-400">Portfolio</a>
+                    <a href="#military" class="nav-link px-3 py-2 hover:text-cyan-400">Military Service</a>
+                    <a href="#contact" class="nav-link px-3 py-2 hover:text-cyan-400">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-cover bg-center text-white" style="background-image: url('images/background.jpg'); background-color: rgba(25,33,56,0.85); background-blend-mode: overlay;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">Ahmed Saleh Zaitoon</h1>
+            <p class="text-2xl mb-6">Civil Engineer | Steel Detailing & 3D Modeling Specialist</p>
+            <p class="max-w-3xl mx-auto mb-8 text-lg">With a passion for precision and innovation, I deliver constructible 3D models and detailed shop drawings using Tekla Structures, Revit, and advanced automation tools. My international experience spans industrial and architectural projects, ensuring seamless collaboration between design and construction teams.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#portfolio" style="background-color: #FF5733;" class="text-white px-8 py-3 rounded-md hover-scale">
+                    View Projects
+                  </a>
+                  <a href="https://1drv.ms/w/c/7c5e6e77887b13c7/ER6Wh_uKOxtMm1BGWZ2NHeEB3T07jQdd_U7pFI14zempaA?e=YLJ5bB" download
+                  style="background-color: #006eff;" class="text-white px-8 py-3 rounded-md hover-scale">
+                  Download CV
+               </a>
+                           </div>
+            <div class="mt-8 text-slate-300">
+                <p>Key Achievements:</p>
+                <ul class="list-disc list-inside mx-auto max-w-md">
+                    <li>Delivered 20+ projects across USA and Saudi Arabia</li>
+                    <li>Reduced fabrication errors by more than 50% through automation, custom components & applications</li>
+                    <li>Developed custom Tekla plugins for workflow automation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">My Story</h3>
+                    <p class="mb-4 text-lg">Growing up in Kafr Dawar, Egypt, I was fascinated by how structures were built to withstand time and elements. This curiosity led me to pursue a B.Sc. in Civil Engineering at Alexandria University, where I discovered my passion for steel detailing and 3D modeling.</p>
+                    <p class="mb-4">My career has been driven by a commitment to precision and efficiency, using tools like Tekla Structures and Revit to create models that are both accurate and constructible. I thrive on solving complex engineering challenges and collaborating with teams to bring designs to life.</p>
+                    <h3 class="text-2xl font-semibold mb-4 mt-6">Engineering Philosophy</h3>
+                    <p class="mb-4">I believe in bridging the gap between design and construction through clear communication and meticulous attention to detail. My work focuses on creating models that are not only technically sound but also practical for fabrication and erection, minimizing errors and delays.</p>
+                    <h3 class="text-2xl font-semibold mb-4 mt-6">Career Goals</h3>
+                    <p> My goal is to lead innovation in steel detailing by integrating advanced automation and parametric design, pushing the boundaries of efficiency and accuracy in structural engineering.</p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="images/HeadShot.png" alt="Professional Headshot" class="rounded-lg shadow-md hover-scale">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">Education & Certifications</h2>
+            <div class="space-y-12">
+                <div class="timeline-item">
+                    <h3 class="text-2xl font-semibold">B.Sc. Civil Engineering, Alexandria University</h3>
+                    <p class="text-slate-600">Class of 2022, Graduated with Distinction (Grade : Very Good "Ranked 30Th")</p>
+                    <p class="mt-4">Completed rigorous coursework in:</p>
+                    <ul class="list-disc list-inside text-slate-600 mt-2">
+                        <li>Structural Analysis and Design</li>
+                        <li>Steel Structures (AISC, Eurocode)</li>
+                        <li>Building Information Modeling (BIM)</li>
+                        <li>Computer-Aided Design (CAD)</li>
+                        <li>Finite Element Analysis</li>
+                    </ul>
+                    <h4 class="text-xl font-semibold mt-6">Graduation Project: Steel Industrial Building</h4>
+                    <p class="mt-2">Designed and detailed a 4200 sqm steel industrial Building, including complex connections and erection plans. Achieved an Excellent grade for precision and innovation.</p>
+                    <p class="mt-2"><strong>Scope:</strong> Full structural modeling, connection design, shop drawings, and material take-offs.</p>
+                    <p><strong>Tools:</strong> Tekla Structures, SAP2000, AutoCAD, IDEA StatiCa, MS Excel</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                        <img src="images/grad1.png" alt="3D Model" class="rounded-lg shadow-md hover-scale">
+                        <img src="images/grad2.png" alt="Shop Drawing" class="rounded-lg shadow-md hover-scale">
+                        <img src="images/grad3.png" alt="Shop Drawing" class="rounded-lg shadow-md hover-scale">
+                        <img src="images/grad4.png" alt="Shop Drawing" class="rounded-lg shadow-md hover-scale">
+
+
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <h3 class="text-2xl font-semibold">Certifications</h3>
+                    <ul class="list-disc list-inside text-slate-600 mt-4">
+                        <li>Tekla Structures Certified Steel Fundamentals Certification (2024)</li>
+                        <li>Grasshopper Basics Training (2024)</li>
+                        <li>Certified Human Resources Essentials (2021)</li>
+                    </ul>
+                    <p class="mt-4">Ongoing learning through online courses in C# programming and advanced BIM workflows to enhance automation capabilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">Professional Experience</h2>
+            <div class="space-y-16">
+                <div class="timeline-item">
+                    <h3 class="text-2xl font-semibold">Steel Detailer, Infinity Steel, Egypt</h3>
+                    <p class="text-slate-600">2024–Present</p>
+                    <p class="mt-4">Led detailing for over 20 international projects, producing high-quality 3D models and shop drawings for industrial and architectural steel structures. Collaborated with architects, engineers, and contractors to ensure seamless project execution.</p>
+                    <h4 class="text-xl font-semibold mt-6">Key Responsibilities</h4>
+                    <ul class="list-disc list-inside text-slate-600 mt-2">
+                        <li>Developed 3D models and shop drawings using Tekla Structures and Revit</li>
+                        <li>Performed clash detection with Tekla and Navisworks, resolving 95% of issues pre-construction</li>
+                        <li>Created custom Tekla components, reducing modeling time by more than 50%</li>
+                        <li>Managed RFIs, improving project delivery timelines by 20%</li>
+                        <li>Trained 3 junior detailers, enhancing team productivity</li>
+                        <li>Created Shop Drawings for Rebars using Autodesk Revit</li>
+                        <li>Helped The Estimation team with tight deadlines to create proposals for bid and MTO Models</li>
+                        <li>Created An Application To create Beams and Columns from Cad Files to Streamline Modeling and Help Estimation</li>
+
+                    </ul>
+                    <h4 class="text-xl font-semibold mt-6">Leadership & Teamwork</h4>
+                    <p class="mt-2">Spearheaded coordination meetings with fabrication teams, fostering clear communication. Mentored junior engineers, promoting a culture of continuous learning and precision.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3 class="text-2xl font-semibold">Junior Engineer, Egyptian Armed Forces Engineering Authority</h3>
+                    <p class="text-slate-600">2023–2024</p>
+                    <p class="mt-4">Supported infrastructure projects, including roads and military facilities, focusing on project management, quality control, and site coordination.</p>
+                    <ul class="list-disc list-inside text-slate-600 mt-2">
+                        <li>Managed material procurement and scheduling for 3 projects</li>
+                        <li>Ensured compliance with engineering standards under tight deadlines</li>
+                        <li>Developed skills in teamwork and high-pressure decision-making</li>
+                    </ul>
+                    <p class="mt-4">This experience instilled discipline and a strong sense of responsibility, shaping my approach to engineering challenges.</p>
+                </div>
+                    
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Software Proficiency</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="font-medium">Tekla Structures</p>
+                            <div class="progress-bar"><div class="progress-bar-fill" style="width: 95%;"></div></div>
+                            <p class="text-slate-600 mt-2">Expert in modeling, custom components, custom applications and shop drawing production.</p>
+                        </div>
+                        <div>
+                            <p class="font-medium">Autodesk Revit</p>
+                            <div class="progress-bar"><div class="progress-bar-fill" style="width: 85%;"></div></div>
+                            <p class="text-slate-600 mt-2">Proficient in BIM coordination and reinforcement detailing.</p>
+                        </div>
+                        <div>
+                            <p class="font-medium">AutoCAD</p>
+                            <div class="progress-bar"><div class="progress-bar-fill" style="width: 97%;"></div></div>
+                            <p class="text-slate-600 mt-2">Skilled in 2D drafting and cleanup.</p>
+                        </div>
+                        <div>
+                            <p class="font-medium">Navisworks</p>
+                            <div class="progress-bar"><div class="progress-bar-fill" style="width: 75%;"></div></div>
+                            <p class="text-slate-600 mt-2">Used for clash detection and project coordination.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Programming & Automation</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="font-medium">C#</p>
+                            <div class="progress-bar"><div class="progress-bar-fill" style="width: 60%;"></div></div>
+                            <p class="text-slate-600 mt-2">Developing plugins for Tekla to automate repetitive tasks.</p>
+                        </div>
+                        <div>
+                            <p class="font-medium">Grasshopper</p>
+                            <div class="progress-bar"><div class="progress-bar-fill" style="width: 60%;"></div></div>
+                            <p class="text-slate-600 mt-2">Creating parametric models for complex geometries.</p>
+                        </div>
+                        <div>
+                            <p class="font-medium">Tekla Custom Components</p>
+                            <div class="progress-bar"><div class="progress-bar-fill" style="width: 75%;"></div></div>
+                            <p class="text-slate-600 mt-2">Creating custom components to reduce repetitive tasks</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Analysis & Standards</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="font-medium">SAP2000</p>
+                            <div class="progress-bar"><div class="progress-bar-fill" style="width: 65%;"></div></div>
+                            <p class="text-slate-600 mt-2">Structural analysis for steel and concrete structures.</p>
+                        </div>
+                        <div>
+                            <p class="font-medium">Etabs, Robot</p>
+                            <div class="progress-bar"><div class="progress-bar-fill" style="width: 65%;"></div></div>
+                            <p class="text-slate-600 mt-2">Structural analysis and checking</p>
+                        </div>
+                        <div>
+                            <p class="font-medium">IDEA StatiCa</p>
+                            <div class="progress-bar"><div class="progress-bar-fill" style="width: 70%;"></div></div>
+                            <p class="text-slate-600 mt-2">Connection design and finite element analysis.</p>
+                        </div>
+                        <div>
+                            <p class="font-medium">Industry Standards</p>
+                            <div class="progress-bar"><div class="progress-bar-fill" style="width: 85%;"></div></div>
+                            <p class="text-slate-600 mt-2">Expertise in AISC, NYSCA, Eurocode standards for global compliance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">Project Portfolio</h2>
+            <div class="space-y-16">
+                <!-- Graduation Project -->
+                <div class="timeline-item">
+                    <h3 class="text-2xl font-semibold">Graduation Project: Steel Industrial Building</h3>
+                    <p class="text-slate-600">Alexandria University, 2022</p>
+                    <p class="mt-4"><strong>Overview:</strong> Designed a 4200 sqm steel industrial facility with complex connections and erection sequences.</p>
+                    <p class="mt-2"><strong>Challenges:</strong> Designing moment-resisting connections under seismic loads, meeting tight academic deadlines.</p>
+                    <p class="mt-2"><strong>Solutions:</strong> Utilized Tekla Structures for precise modeling, SAP2000 for structural analysis, and IDEA StatiCa for connection design.</p>
+                    <p class="mt-2"><strong>Tools:</strong> Tekla Structures, SAP2000, AutoCAD, IDEA StatiCa, MS Excel</p>
+                    <p class="mt-2"><strong>Outcomes:</strong> Achieved an Excellent grade, produced fully constructible shop drawings and erection plans.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+                        <img src="images/grad2.png" alt="3D Model" class="rounded-lg shadow-md hover-scale">
+                        <img src="images/grad5.png" alt="Connection Detail" class="rounded-lg shadow-md hover-scale">
+                        <img src="images/grad6.png" alt="ection Plan" class="rounded-lg shadow-md hover-scale">
+                    </div>
+                </div>
+
+                <!-- USA Project 1: Architectural Steel -->
+                <div class="timeline-item">
+                    <h3 class="text-2xl font-semibold">Architectural Steel Project, New York, USA</h3>
+                    <p class="text-slate-600">2024</p>
+                    <p class="mt-4"><strong>Overview:</strong> Detailed handrails, guardrails, dunnage platforms, and window guards for a high-rise building, adhering to NYSCA and AISC standards.</p>
+                    <p class="mt-2"><strong>Challenges:</strong> Strict safety regulations, complex coordination with architectural elements.</p>
+                    <p class="mt-2"><strong>Solutions:</strong> Used Navisworks for clash detection and Revit for precise BIM coordination.</p>
+                    <p class="mt-2"><strong>Tools:</strong> Revit, Navisworks, Tekla Structures, AutoCAD</p>
+                    <p class="mt-2"><strong>Outcomes:</strong> Zero on-site clashes, delivered ahead of schedule.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                        <img src="images/TH1.jpg" alt="Guardrail Model" class="rounded-lg shadow-md hover-scale">
+                        <img src="images/TH2.jpg" alt="WIF Model" class="rounded-lg shadow-md hover-scale">
+                    </div>
+                </div>
+
+                <!-- USA Project 2: Dunnage Platform -->
+                <div class="timeline-item">
+                    <h3 class="text-2xl font-semibold">Dunnage Platform Assembly, USA</h3>
+                    <p class="text-slate-600">2024</p>
+                    <p class="mt-4"><strong>Overview:</strong> Designed and detailed a dunnage platform for HVAC equipment, ensuring structural stability and compliance with AISC standards.</p>
+                    <p class="mt-2"><strong>Challenges:</strong> Limited space for installation, tight tolerances.</p>
+                    <p class="mt-2"><strong>Solutions:</strong> Optimized Detailing using Tekla Structures</p>
+                    <p class="mt-2"><strong>Tools:</strong> Tekla Structures, IDEA StatiCa, Navisworks</p>
+                    <p class="mt-2"><strong>Outcomes:</strong> Successful installation with no rework required.</p>
+                    <img src="images/TH3.jpg" alt="Dunnage Platform" class="rounded-lg shadow-md hover-scale">
+                </div>
+
+                <!-- Saudi Arabia Project 1: Pipe Racks -->
+                <div class="timeline-item">
+                    <h3 class="text-2xl font-semibold">Industrial Pipe Racks, Saudi Arabia</h3>
+                    <p class="text-slate-600">2025</p>
+                    <p class="mt-4"><strong>Overview:</strong> Detailed large-scale pipe racks and access platforms for an oil refinery, coordinating with extensive piping layouts.</p>
+                    <p class="mt-2"><strong>Challenges:</strong> Complex interdisciplinary coordination, harsh environmental conditions.</p>
+                    <p class="mt-2"><strong>Solutions:</strong> Advanced clash detection in Navisworks, precise modeling in Tekla Structures.</p>
+                    <p class="mt-2"><strong>Tools:</strong> Tekla Structures, Navisworks, AutoCAD</p>
+                    <p class="mt-2"><strong>Outcomes:</strong> Error-free fabrication</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                        <img src="images/AR1.jpg" alt="Pipe Rack Model" class="rounded-lg shadow-md hover-scale">
+                        <img src="images/AR2.jpg" alt="Pipe Rack Model" class="rounded-lg shadow-md hover-scale">
+                    </div>
+                </div>
+
+                <!-- Saudi Arabia Project 2: Access Platforms -->
+                <div class="timeline-item">
+                    <h3 class="text-2xl font-semibold">Access Platforms, Saudi Arabia</h3>
+                    <p class="text-slate-600">2025</p>
+                    <p class="mt-4"><strong>Overview:</strong> Detailed more than 56 access platforms for industrial equipment maintenance, ensuring safety and accessibility.</p>
+                    <p class="mt-2"><strong>Challenges:</strong> High safety standards, limited footprint & repetitive modeling</p>
+                    <p class="mt-2"><strong>Solutions:</strong> Parametric design in Grasshopper for optimized layouts</p>
+                    <p class="mt-2"><strong>Tools:</strong> Grasshopper, Tekla Structures</p>
+                    <p class="mt-2"><strong>Outcomes:</strong> Safe, efficient platforms delivered on time.</p>
+                    <img src="images/AR3.png" alt="Access Platform Model" class="rounded-lg shadow-md hover-scale">
+                </div>
+
+                <!-- Custom Component -->
+                <div class="timeline-item">
+                    <h3 class="text-2xl font-semibold">Custom Component : Parametric WIF</h3>
+                    <p class="text-slate-600">2024</p>
+                    <p class="mt-4"><strong>Overview:</strong> Created a custom component in Tekla for a completely parametric Wrought Iron Fence</p>
+                    <p class="mt-2"><strong>Challenges:</strong> Different Connection to WIF Post And Different Spacings and Heights</p>
+                    <p class="mt-2"><strong>Solutions:</strong> Used Array Tool and mathematic Functions to make calculations</p>
+                    <p class="mt-2"><strong>Tools:</strong>Tekla Structures</p>
+                    <p class="mt-2"><strong>Outcomes:</strong> Delivered accurate Modeling in 90% less Time</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                        <img src="images/C1.png" alt="WIF Component" class="rounded-lg shadow-md hover-scale">
+                        <img src="images/C2.png" alt="WIF Component" class="rounded-lg shadow-md hover-scale">
+                    </div>
+                </div>
+
+                <!-- Additional App AZ Filtering -->
+                <div class="timeline-item">
+                    <h3 class="text-2xl font-semibold">Application : AZ Filtering Tool</h3>
+                    <p class="text-slate-600">2025</p>
+                    <p class="mt-4"><strong>Overview:</strong> Created an Application to filter Parts, Bolts and Components in the entire model</p>
+                    <p class="mt-2"><strong>Challenges:</strong> Iterating through the entire model objects took alot of time</p>
+                    <p class="mt-2"><strong>Solutions:</strong> Saving each object in a Set and give it all related properties</p>
+                    <p class="mt-2"><strong>Tools:</strong> Visual Studio C#, Tekla Structures, Deepseek AI and Gemini AI</p>
+                    <p class="mt-2"><strong>Outcomes:</strong> Robust Application, Fast and Accurate Filtering</p>
+                    <img src="images/AZF.png" alt="AZ Filtering Tool" class="rounded-lg shadow-md hover-scale">
+                </div>
+
+                <!-- Additional App AZ Creator -->
+                <div class="timeline-item">
+                    <h3 class="text-2xl font-semibold">Application : AZ Creator</h3>
+                    <p class="text-slate-600">2025</p>
+                    <p class="mt-4"><strong>Overview:</strong> Created an Application to Create Beams and Columns from Cad Drawings</p>
+                    <p class="mt-2"><strong>Challenges:</strong> Linking the Cad File and Reading the Data in it</p>
+                    <p class="mt-2"><strong>Solutions:</strong> Used A libirary called "ACadSharp" to read the dwg/dxf files</p>
+                    <p class="mt-2"><strong>Tools:</strong> Visual Studio C#, Tekla Structures, Grok AI and Gemini AI</p>
+                    <p class="mt-2"><strong>Outcomes:</strong> Modeling a Large 250Tons Piperack in less than 6 Hours</p>
+                    <img src="images/AZC.png" alt="Bridge Model" class="rounded-lg shadow-md hover-scale">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Military Service Section -->
+    <section id="military" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">Military Service</h2>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-lg text-slate-600">Served in the Egyptian Armed Forces Engineering Authority (2023–2024), contributing to infrastructure projects under high-pressure conditions.</p>
+                <h3 class="text-2xl font-semibold mt-6">Key Experiences</h3>
+                <ul class="list-disc list-inside text-slate-600 mt-4">
+                    <li>Led a team of 6 in constructing a military facility, ensuring quality and safety.</li>
+                    <li>Managed logistics and material procurement for time-sensitive projects.</li>
+                    <li>Developed discipline and leadership skills, handling complex project timelines.</li>
+                    <li>Coordinated with multiple sub-contractors to meet strict deadlines.</li>
+                </ul>
+                <p class="mt-4">This experience honed my ability to work efficiently in teams, maintain discipline, and deliver results under pressure, skills I apply to every engineering project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">Contact Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Contact Information</h3>
+                    <p class="text-slate-600">Email: ahmed.zietoon@hotmail.com</p>
+                    <p class="text-slate-600">Phone: +20 155 623 2672</p>
+                    <p class="text-slate-600">Location: Kafr Dawar, Beheira, Egypt</p>
+                    <p class="text-slate-600">LinkedIn: <a href="https://linkedin.com/in/ahmed-saleh-zaitoon" class="text-cyan-600 hover:underline">linkedin.com/in/ahmed-saleh-zaitoon</a></p>
+                    <p class="text-slate-600 mt-4">Availability: Open to new opportunities in steel detailing and BIM projects worldwide.</p>
+                </div>
+                <div class="bg-slate-100 p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Get in Touch</h3>
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-slate-700">Name</label>
+                        <input type="text" id="name" class="mt-1 p-3 w-full border rounded-md focus:ring-cyan-600 focus:border-cyan-600">
+                    </div>
+                    <div class="mt-4">
+                        <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+                        <input type="email" id="email" class="mt-1 p-3 w-full border rounded-md focus:ring-cyan-600 focus:border-cyan-600">
+                    </div>
+                    <div class="mt-4">
+                        <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
+                        <textarea id="message" rows="5" class="mt-1 p-3 w-full border rounded-md focus:ring-cyan-600 focus:border-cyan-600"></textarea>
+                    </div>
+                    <button id="contact-submit" class="mt-6 bg-cyan-600 text-white px-8 py-3 rounded-md hover:bg-cyan-700 hover-scale">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>© 2025 Ahmed Saleh Zaitoon. All rights reserved.</p>
+            <p class="mt-2 text-slate-300">Built with precision and passion for engineering excellence.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Contact form submission (mock)
+        document.getElementById('contact-submit').addEventListener('click', () => {
+            const spinner = document.getElementById('loading-spinner');
+            spinner.style.display = 'block';
+            setTimeout(() => {
+                spinner.style.display = 'none';
+                alert('Message sent successfully!');
+            }, 1000);
+        });
+
+        // Lazy load images
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('img');
+            const options = { rootMargin: '0px', threshold: 0.1 };
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src || img.src;
+                        observer.unobserve(img);
+                    }
+                });
+            }, options);
+            images.forEach(img => observer.observe(img));
+        });
+    </script>
